@@ -7,19 +7,3 @@ GAMEOFLIFELIB__API void Macro::Config()
 	SetConsoleOutputCP(CP_UTF8);
 	locale::global(locale("fr_FR"));
 }
-
-GAMEOFLIFELIB__API int Macro::GetInt()
-{
-	int _value;
-	bool _isValid;
-	do
-	{
-		cin >> _value;
-		_isValid = cin.good();
-		CLEAR;
-
-
-	} while (!_isValid);
-
-	return _value;
-}
